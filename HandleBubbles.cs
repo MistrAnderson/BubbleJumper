@@ -7,21 +7,21 @@ public class HandleBubbles : MonoBehaviour
     public GameObject[] bubbleSets;
     public static HandleBubbles instance;
 
-    private void Awake()
-    {
-        if (instance == null)
-        {
-            instance = this;
-        }
-        else
-        {
-            Destroy(this);
-        }
-    }
+    // private void Awake()
+    // {
+    //     if (instance == null)
+    //     {
+    //         instance = this;
+    //     }
+    //     else
+    //     {
+    //         Destroy(this);
+    //     }
+    // }
 
     void Start()
     {
-        bubbleSets = GameObject.FindGameObjectsWithTag("BubbleSet");
+        enabled = false;
     }
 
     public void ChangeDialogue(int idSet)
