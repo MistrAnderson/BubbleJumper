@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(Movement))]
 public class MovementInput : MonoBehaviour
 {
     Movement movement;
@@ -13,6 +14,6 @@ public class MovementInput : MonoBehaviour
     void Update()
     {
         float dir = Input.GetAxis("Horizontal");
-        movement.movement(dir);
+        movement.Move(dir);
     }
 }

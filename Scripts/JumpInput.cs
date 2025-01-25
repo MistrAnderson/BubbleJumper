@@ -3,28 +3,21 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
+[RequireComponent(typeof(JumpScript))]
 public class JumpInput : MonoBehaviour
 {
-    Jump jump;
-    int jumpNumber = 1;
+    JumpScript jump;
 
-    private void Awake()
+    void Awake()
     {
-        jump = GetComponent<Jump>();
+        jump = GetComponent<JumpScript>();
     }
+
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space) && jumpNumber >= 1)
+        if (Input.GetKeyDown(KeyCode.Space))
         {
-            jump.jump();
-            jumpNumber = jumpNumber - 1;
-        }
-    }
-    void OnCollisionEnter2D()
-    {
-        if (jumpNumber <= 0)
-        {
-            jumpNumber = jumpNumber + 1;
+            jump.TryJumping();
         }
     }
 }

@@ -5,7 +5,7 @@ using UnityEngine;
 public class Movement : MonoBehaviour
 {
     public float speed = 1;
-    public void movement(float direction)
+    public void Move(float direction)
     {
         Vector2 v = new Vector2(direction, 0);
         transform.Translate(v * speed * Time.deltaTime);
