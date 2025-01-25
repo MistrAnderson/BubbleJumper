@@ -7,18 +7,6 @@ public class HandleBubbles : MonoBehaviour
     public GameObject[] bubbleSets;
     public static HandleBubbles instance;
 
-    // private void Awake()
-    // {
-    //     if (instance == null)
-    //     {
-    //         instance = this;
-    //     }
-    //     else
-    //     {
-    //         Destroy(this);
-    //     }
-    // }
-
     void Start()
     {
         enabled = false;
@@ -30,7 +18,7 @@ public class HandleBubbles : MonoBehaviour
         bubbleSets[idSet].SetActive(true);
     }
 
-    void DisableBubbles()
+    public void DisableBubbles()
     {
         foreach (GameObject set in bubbleSets)
         {

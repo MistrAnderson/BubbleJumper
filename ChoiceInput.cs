@@ -5,29 +5,33 @@ using UnityEngine;
 
 public class ChoiceInput : MonoBehaviour
 {
+    public KeyCode[] inputKeys;
     HandleBubbles handler;
 
     void Awake()
     {
         handler = GetComponent<HandleBubbles>();
         enabled = false;
+        InitializeKeys();
     }
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Alpha1))
+        for (int i = 0; i < handler.bubbleSets.Length; i++)
         {
-            handler.ChangeDialogue(0);
+            if (Input.GetKeyDown(inputKeys[i]))
+            {
+                handler.ChangeDialogue(i);
+            }
         }
 
-        if (Input.GetKeyDown(KeyCode.Alpha2))
+        if (Input.GetKeyDown(KeyCode.Alpha0))
         {
-            handler.ChangeDialogue(1);
+            handler.DisableBubbles();
         }
-
-        if (Input.GetKeyDown(KeyCode.Alpha3))
-        {
-            handler.ChangeDialogue(2);
-        }
+    }
+    void InitializeKeys()
+    {
+        inputKeys = new KeyCode[] { KeyCode.Alpha1, KeyCode.Alpha2, KeyCode.Alpha3, KeyCode.Alpha4, KeyCode.Alpha5, KeyCode.Alpha6 };
     }
 }
