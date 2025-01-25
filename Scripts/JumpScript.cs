@@ -6,7 +6,7 @@ public class JumpScript : MonoBehaviour
 {
     public Rigidbody2D rb;
     public float forceAmount = 3;
-    int jumpsMax = 1;
+    [SerializeField] int jumpsMax = 1;
     int jumpsRemaining;
 
     void Awake()
