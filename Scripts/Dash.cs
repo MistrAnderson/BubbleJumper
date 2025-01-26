@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 
-public class Dash : MonoBehaviour
+public class DashScript : MonoBehaviour
 {
     [SerializeField] Rigidbody2D rb;
     public float speed = 10f;
@@ -25,7 +25,7 @@ public class Dash : MonoBehaviour
         {
             if (doubleTapTime > Time.time && LastKeyCode == KeyCode.A)
             {
-                StartCoroutine(Dashs(-1));
+                StartCoroutine(Dash(-1));
             }
             else
             {
@@ -38,7 +38,7 @@ public class Dash : MonoBehaviour
         {
             if (doubleTapTime > Time.time && LastKeyCode == KeyCode.D)
             {
-                StartCoroutine(Dashs(1));
+                StartCoroutine(Dash(1));
             }
             else
             {
@@ -54,7 +54,7 @@ public class Dash : MonoBehaviour
             rb.velocity = new Vector2(mx * speed, rb.velocity.y);
         }
     }
-    IEnumerator Dashs (float direction)
+    IEnumerator Dash (float direction)
     {
         isDashing = true;
         rb.velocity = new Vector2(rb.velocity.x, 0f);
