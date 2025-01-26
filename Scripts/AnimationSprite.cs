@@ -27,7 +27,6 @@ public class AnimationSprite : MonoBehaviour
 
         FlipSprite(xVelocity);
 
-        Debug.Log($"xVelocity: {xVelocity}, yVelocity: {rb.velocity.y}");
         animator.SetBool("IsJumping", !jumpScript.isGrounded);
         animator.SetFloat("xVelocity", Mathf.Abs(xVelocity));
         animator.SetFloat("yVelocity", rb.velocity.y);
