@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 87a5617994c7b6048a1e79de441a1502
+guid: 0ce8ea9bbfd32c0438a2faed6075cdd8
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -39,7 +39,7 @@ TextureImporter:
     mipBias: 0
     wrapU: 1
     wrapV: 1
-    wrapW: 0
+    wrapW: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -63,9 +63,9 @@ TextureImporter:
   compressionQualitySet: 0
   textureFormatSet: 0
   ignorePngGamma: 0
-  applyGammaDecoding: 1
+  applyGammaDecoding: 0
   swizzle: 50462976
-  cookieLightType: 2
+  cookieLightType: 0
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -85,7 +85,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -97,10 +97,10 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: IdlePlayer-Sheet_0
+      name: RunPlayer-Sheet_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 1
         y: 0
         width: 48
         height: 48
@@ -111,14 +111,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 252733080a0006e45ba79c6cac116fc0
-      internalID: -1238284031
+      spriteID: 5dddf01b2bcc39a48875d646ede4f4fa
+      internalID: 1201917725
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: IdlePlayer-Sheet_1
+      name: RunPlayer-Sheet_1
       rect:
         serializedVersion: 2
         x: 48
@@ -132,14 +132,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dcce621446173a145aced41e51b0d316
-      internalID: 11838345
+      spriteID: a1976cdae44f48d4da8533f9e49a6e28
+      internalID: 1701313027
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: IdlePlayer-Sheet_2
+      name: RunPlayer-Sheet_2
       rect:
         serializedVersion: 2
         x: 96
@@ -153,14 +153,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bd640cdedc814f041a2adc76d6cf585a
-      internalID: -1966482974
+      spriteID: 8bee75da7fd6cfa40a596d9263e60870
+      internalID: 507052113
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: IdlePlayer-Sheet_3
+      name: RunPlayer-Sheet_3
       rect:
         serializedVersion: 2
         x: 144
@@ -174,14 +174,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 78a2eb0dac5af17479ed41e0edd16a1a
-      internalID: 561762076
+      spriteID: 74a169dd74efe0b4b966f0b57ee944d7
+      internalID: -991665748
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: IdlePlayer-Sheet_4
+      name: RunPlayer-Sheet_4
       rect:
         serializedVersion: 2
         x: 192
@@ -195,14 +195,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 302810d6a2864bc4685bf626c078d559
-      internalID: -1228450065
+      spriteID: 220f10b74bbd9e346aea1b7e95bf039e
+      internalID: 956382601
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: IdlePlayer-Sheet_5
+      name: RunPlayer-Sheet_5
       rect:
         serializedVersion: 2
         x: 240
@@ -216,14 +216,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6e4af762761e65c4e84bd17d37bbe4dd
-      internalID: 1189345292
+      spriteID: d3f2196071a3ef14b9acb2187e0bff2a
+      internalID: -1533732434
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: IdlePlayer-Sheet_6
+      name: RunPlayer-Sheet_6
       rect:
         serializedVersion: 2
         x: 288
@@ -237,14 +237,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 03d04443d535afe4682306f07b72c645
-      internalID: -37699020
+      spriteID: 66da4be3e2358cf41bdac8fbde1e311d
+      internalID: 353330832
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: IdlePlayer-Sheet_7
+      name: RunPlayer-Sheet_7
       rect:
         serializedVersion: 2
         x: 336
@@ -258,50 +258,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 02c61c30e0430604fab781167740d259
-      internalID: 881808594
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: IdlePlayer-Sheet_8
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 0
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6fdfe370a1a9d7f46b2eda1a714d6f59
-      internalID: 1919408173
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: IdlePlayer-Sheet_9
-      rect:
-        serializedVersion: 2
-        x: 432
-        y: 0
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: afa8f57c747dc544eb54eae9f6ab3ffc
-      internalID: -736599828
+      spriteID: a87e579d40bb8584994f8ad6ea25e359
+      internalID: 894038725
       vertices: []
       indices: 
       edges: []
@@ -317,16 +275,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      IdlePlayer-Sheet_0: -1238284031
-      IdlePlayer-Sheet_1: 11838345
-      IdlePlayer-Sheet_2: -1966482974
-      IdlePlayer-Sheet_3: 561762076
-      IdlePlayer-Sheet_4: -1228450065
-      IdlePlayer-Sheet_5: 1189345292
-      IdlePlayer-Sheet_6: -37699020
-      IdlePlayer-Sheet_7: 881808594
-      IdlePlayer-Sheet_8: 1919408173
-      IdlePlayer-Sheet_9: -736599828
+      RunPlayer-Sheet_0: 1201917725
+      RunPlayer-Sheet_1: 1701313027
+      RunPlayer-Sheet_2: 507052113
+      RunPlayer-Sheet_3: -991665748
+      RunPlayer-Sheet_4: 956382601
+      RunPlayer-Sheet_5: -1533732434
+      RunPlayer-Sheet_6: 353330832
+      RunPlayer-Sheet_7: 894038725
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

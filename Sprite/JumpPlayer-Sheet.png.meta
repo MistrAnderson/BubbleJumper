@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 87a5617994c7b6048a1e79de441a1502
+guid: ffafcd75f9f43d344b6fd57d554dcfee
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -39,7 +39,7 @@ TextureImporter:
     mipBias: 0
     wrapU: 1
     wrapV: 1
-    wrapW: 0
+    wrapW: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -63,9 +63,9 @@ TextureImporter:
   compressionQualitySet: 0
   textureFormatSet: 0
   ignorePngGamma: 0
-  applyGammaDecoding: 1
+  applyGammaDecoding: 0
   swizzle: 50462976
-  cookieLightType: 2
+  cookieLightType: 0
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -85,7 +85,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -97,7 +97,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: IdlePlayer-Sheet_0
+      name: JumpPlayer-Sheet_0
       rect:
         serializedVersion: 2
         x: 0
@@ -105,20 +105,20 @@ TextureImporter:
         width: 48
         height: 48
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 252733080a0006e45ba79c6cac116fc0
-      internalID: -1238284031
+      spriteID: e2d67d9ee75cf2043a0372a6fa4f3280
+      internalID: 1387333760
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: IdlePlayer-Sheet_1
+      name: JumpPlayer-Sheet_1
       rect:
         serializedVersion: 2
         x: 48
@@ -126,20 +126,20 @@ TextureImporter:
         width: 48
         height: 48
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dcce621446173a145aced41e51b0d316
-      internalID: 11838345
+      spriteID: 5b5cf56020cfc8743b38e86366b29f08
+      internalID: 809976754
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: IdlePlayer-Sheet_2
+      name: JumpPlayer-Sheet_2
       rect:
         serializedVersion: 2
         x: 96
@@ -147,20 +147,20 @@ TextureImporter:
         width: 48
         height: 48
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bd640cdedc814f041a2adc76d6cf585a
-      internalID: -1966482974
+      spriteID: a1b15b3f42aaf49489e209f7845b8909
+      internalID: 551292518
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: IdlePlayer-Sheet_3
+      name: JumpPlayer-Sheet_3
       rect:
         serializedVersion: 2
         x: 144
@@ -168,20 +168,20 @@ TextureImporter:
         width: 48
         height: 48
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 78a2eb0dac5af17479ed41e0edd16a1a
-      internalID: 561762076
+      spriteID: f29aa12f487a5b34e9da7a8a77db739b
+      internalID: -2028029930
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: IdlePlayer-Sheet_4
+      name: JumpPlayer-Sheet_4
       rect:
         serializedVersion: 2
         x: 192
@@ -189,20 +189,20 @@ TextureImporter:
         width: 48
         height: 48
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 302810d6a2864bc4685bf626c078d559
-      internalID: -1228450065
+      spriteID: f7b63077b06a8d1419932c5a35445bcb
+      internalID: -1639034458
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: IdlePlayer-Sheet_5
+      name: JumpPlayer-Sheet_5
       rect:
         serializedVersion: 2
         x: 240
@@ -210,20 +210,20 @@ TextureImporter:
         width: 48
         height: 48
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6e4af762761e65c4e84bd17d37bbe4dd
-      internalID: 1189345292
+      spriteID: 569423f4ba9c95d4d97eb4bfe01b7ee3
+      internalID: -602152675
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: IdlePlayer-Sheet_6
+      name: JumpPlayer-Sheet_6
       rect:
         serializedVersion: 2
         x: 288
@@ -231,20 +231,20 @@ TextureImporter:
         width: 48
         height: 48
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 03d04443d535afe4682306f07b72c645
-      internalID: -37699020
+      spriteID: b623d8e9cd9df25468c4a62260ec62a8
+      internalID: 771564507
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: IdlePlayer-Sheet_7
+      name: JumpPlayer-Sheet_7
       rect:
         serializedVersion: 2
         x: 336
@@ -252,56 +252,14 @@ TextureImporter:
         width: 48
         height: 48
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 02c61c30e0430604fab781167740d259
-      internalID: 881808594
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: IdlePlayer-Sheet_8
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 0
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6fdfe370a1a9d7f46b2eda1a714d6f59
-      internalID: 1919408173
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: IdlePlayer-Sheet_9
-      rect:
-        serializedVersion: 2
-        x: 432
-        y: 0
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: afa8f57c747dc544eb54eae9f6ab3ffc
-      internalID: -736599828
+      spriteID: 932dc191c0315cb409e60f234dc6da72
+      internalID: -1692457771
       vertices: []
       indices: 
       edges: []
@@ -317,16 +275,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      IdlePlayer-Sheet_0: -1238284031
-      IdlePlayer-Sheet_1: 11838345
-      IdlePlayer-Sheet_2: -1966482974
-      IdlePlayer-Sheet_3: 561762076
-      IdlePlayer-Sheet_4: -1228450065
-      IdlePlayer-Sheet_5: 1189345292
-      IdlePlayer-Sheet_6: -37699020
-      IdlePlayer-Sheet_7: 881808594
-      IdlePlayer-Sheet_8: 1919408173
-      IdlePlayer-Sheet_9: -736599828
+      JumpPlayer-Sheet_0: 1387333760
+      JumpPlayer-Sheet_1: 809976754
+      JumpPlayer-Sheet_2: 551292518
+      JumpPlayer-Sheet_3: -2028029930
+      JumpPlayer-Sheet_4: -1639034458
+      JumpPlayer-Sheet_5: -602152675
+      JumpPlayer-Sheet_6: 771564507
+      JumpPlayer-Sheet_7: -1692457771
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
