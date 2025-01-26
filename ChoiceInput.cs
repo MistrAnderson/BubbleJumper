@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class ChoiceInput : MonoBehaviour
 {
-    KeyCode[] inputKeys;
+    public KeyCode[] inputKeys;
     HandleBubbles handler;
 
     void Awake()

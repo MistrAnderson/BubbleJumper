@@ -7,10 +7,6 @@ public class OnTriggerInteract : MonoBehaviour
 {
     HandleBubbles handler;
     ChoiceInput input;
-    public DialogueData dialogueData;
-    // String activeChoice
-
-    public string npcName;
 
     void Awake()
     {
@@ -25,7 +21,6 @@ public class OnTriggerInteract : MonoBehaviour
             handler.enabled = true;
             input.enabled = true;
             // And do stuff with UI
-            HandlerUI.instance.ShowDialogue(dialogueData.dialogue, npcName);
         }
     }
 
@@ -36,7 +31,6 @@ public class OnTriggerInteract : MonoBehaviour
             handler.enabled = false;
             input.enabled = false;
             // And do stuff with UI
-            HandlerUI.instance.EndDialogue();
         }
     }
 }
