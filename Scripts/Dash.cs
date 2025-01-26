@@ -8,7 +8,7 @@ public class Dash : MonoBehaviour
     [SerializeField] Rigidbody2D rb;
     public float speed = 10f;
     public float mx;
-    public float dashDistance = 10f;
+    public float dashDistance = 7f;
     bool isDashing;
     float doubleTapTime;
     KeyCode LastKeyCode;
