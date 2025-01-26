@@ -8,6 +8,7 @@ public class JumpScript : MonoBehaviour
     public float forceAmount = 3;
     [SerializeField] int jumpsMax = 1;
     int jumpsRemaining;
+    bool isGrounded;
 
     void Awake()
     {
@@ -34,11 +35,8 @@ public class JumpScript : MonoBehaviour
         jumpsRemaining = jumpsMax;
     }
 
-    void OnCollisionEnter2D()
+    void OnTriggerEnter2D()
     {
-        // TODO: Need to check which surface we collide with before reseting (Don't reset on wall...)
         ResetJumps();
     }
-
-
 }
