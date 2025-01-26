@@ -7,6 +7,7 @@ public class Movement : MonoBehaviour
     public float speed = 1;
     public void Move(float direction)
     {
+        Debug.LogError("alede movement");
         Vector2 v = new Vector2(direction, 0);
         transform.Translate(v * speed * Time.deltaTime);
     }
