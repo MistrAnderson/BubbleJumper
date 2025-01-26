@@ -35,7 +35,6 @@ public class AnimationSprite : MonoBehaviour
     
     void FlipSprite(float horizontalInput)
     {
-        Debug.LogError("alede animation2");
         if (isFacingRight && horizontalInput > 0f || !isFacingRight && horizontalInput < 0f)
         {
             isFacingRight = !isFacingRight;
