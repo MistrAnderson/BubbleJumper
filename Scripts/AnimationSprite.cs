@@ -8,9 +8,8 @@ using UnityEngine;
 public class AnimationSprite : MonoBehaviour
 {
     // Start is called before the first frame update
-    float horizontalInput;
     bool isFacingRight = false;
-    bool isGrounded = false;
+    JumpScript jumpScript;
 
     Rigidbody2D rb;
     Animator animator;
@@ -18,29 +17,32 @@ public class AnimationSprite : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        jumpScript = GetComponent<JumpScript>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        horizontalInput = Input.GetAxis("Horizontal");
+        float xVelocity = Input.GetAxis("Horizontal");
 
-        FlipSprite();
+        FlipSprite(xVelocity);
 
-    }
-    private void FixedUpdate()
-    {
-        animator.SetFloat("xVelocity", Math.Abs(rb.velocity.x));
+        Debug.Log($"xVelocity: {xVelocity}, yVelocity: {rb.velocity.y}");
+        animator.SetBool("IsJumping", !jumpScript.isGrounded);
+        animator.SetFloat("xVelocity", Mathf.Abs(xVelocity));
         animator.SetFloat("yVelocity", rb.velocity.y);
     }
-    void FlipSprite()
+    
+    void FlipSprite(float horizontalInput)
     {
-        if (isFacingRight && horizontalInput < 0f || !isFacingRight && horizontalInput > 0f)
+        Debug.LogError("alede animation2");
+        if (isFacingRight && horizontalInput > 0f || !isFacingRight && horizontalInput < 0f)
         {
             isFacingRight = !isFacingRight;
             Vector3 ls = transform.localScale;
             ls.x *= -1f;
             transform.localScale = ls;
+            
         }
     }
 }

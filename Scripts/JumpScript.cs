@@ -8,7 +8,7 @@ public class JumpScript : MonoBehaviour
     public float forceAmount = 3;
     [SerializeField] int jumpsMax = 1;
     int jumpsRemaining;
-    bool isGrounded;
+    public bool isGrounded;
 
     void Awake()
     {
@@ -28,6 +28,7 @@ public class JumpScript : MonoBehaviour
     void Jump()
     {
         rb.AddForce(Vector2.up * forceAmount, ForceMode2D.Impulse);
+        isGrounded = false;
     }
 
     void ResetJumps()
@@ -38,5 +39,6 @@ public class JumpScript : MonoBehaviour
     void OnTriggerEnter2D()
     {
         ResetJumps();
+        isGrounded = true;
     }
 }
